@@ -1,0 +1,554 @@
+// colors
+$color-primario: red;
+$color-secundario: #333;
+$degrade-triple: linear-gradient(grey, #ffff, grey);
+
+// letter size
+$fotos-tienda: 150px;
+$ancho-total: 100%;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span {
+    color: $color-primario;
+    text-shadow: 0 0 2px #ffff;
+}
+
+.ImageDrHard {
+    width: $ancho-total;
+    background-size: cover;
+
+}
+
+.logoDrhard {
+    width: 150px;
+    padding: 50px 20px 20px 50px;
+
+
+}
+
+footer {
+    height: $fotos-tienda;
+    width: $ancho-total;
+    background-color: grey;
+
+    p {
+        text-align: center;
+        color: black;
+        font-size: 15px;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+}
+
+.redes {
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 5px;
+
+}
+
+h1 {
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.jumbotron {
+    height: 250px;
+    margin-bottom: 0;
+    padding: 0;
+    background: linear-gradient(grey, #ffff);
+    border-radius: 0;
+
+    h2 {
+        padding: 10px 0px 20px 5px;
+        color: $color-primario;
+        text-shadow: 0 0 3px black;
+        text-align: center;
+    }
+
+    p {
+        font-size: large;
+        font-style: oblique;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0px 0px 0px 10px;
+        color: $color-primario;
+        text-shadow: 0 0 3px black;
+    }
+}
+
+.carousel-item {
+
+    img {
+        height: 400px;
+        width: $ancho-total;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.escriTorio {
+
+
+    h2 {
+        margin: 10px 10px 20px 10px;
+        padding: 10px 10px 20px 10px;
+        font-size: 35px;
+        display: inline-block;
+        background: $degrade-triple;
+        border-radius: 15px;
+        border: 5px solid black;
+
+    }
+
+    li {
+        font-size: 25px;
+        font-style: oblique;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-left: 20px;
+        line-height: 1.5;
+    }
+
+}
+
+
+.netBook {
+
+    h2 {
+        margin: 10px 10px 20px 10px;
+        padding: 10px 10px 20px 10px;
+        font-size: 35px;
+        display: inline-block;
+        background: $degrade-triple;
+        border-radius: 15px;
+        border: 5px solid black;
+    }
+
+    li {
+        padding-left: 20px;
+        font-size: 25px;
+        line-height: 1.5;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: oblique;
+    }
+
+}
+
+.noteBook {
+
+    h2 {
+        margin: 10px 10px 20px 10px;
+        padding: 10px 10px 20px 10px;
+        font-size: 35px;
+        display: inline-block;
+        background: $degrade-triple;
+        border-radius: 15px;
+        border: 5px solid black;
+    }
+
+    li {
+        font-size: 25px;
+        font-style: oblique;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-left: 20px;
+        line-height: 1.5;
+    }
+
+}
+
+.tituloProduc {
+    color: $color-primario;
+    text-shadow: 0 0 3px $color-secundario;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    padding: 10px 0px 20px 10px;
+    background-color: beige;
+    margin: 0;
+
+}
+
+.producTienda {
+    height: 920px;
+    width: $ancho-total;
+    background-color: beige;
+    padding: 5px;
+
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+
+}
+
+.flex-column {
+    width: 25%;
+    height: 300px;
+    padding: 5px;
+    border: solid $color-secundario 3px;
+    margin: 2px;
+}
+
+@mixin tienda ($bgposition, $bgsize) {
+    background-position: $bgposition;
+    background-size: $bgsize;
+}
+
+
+.cableCharge {
+    background-color: $color-secundario;
+    background-image: url(../assets/img/cablescarga.jpg);
+    height: $fotos-tienda;
+    @include tienda(center, cover)
+}
+
+.cargaDor {
+    background-color: $color-secundario;
+    background-image: url(../assets/img/cargadorspeed.jpg);
+    height: $fotos-tienda;
+    @include tienda(center, cover)
+}
+
+.extensorWifi {
+    background-color: $color-secundario;
+    background-image: url(../assets/img/extensorwifi.jpg);
+    height: $fotos-tienda;
+    @include tienda(center, cover)
+}
+
+.cargaNet {
+    background-color: $color-secundario;
+    background-image: url(../assets/img/chargnot.png);
+    height: $fotos-tienda;
+    @include tienda(center, cover)
+}
+
+.logPro {
+    background-color: $color-secundario;
+    background-image: url(../assets/img/mousegpro.jpg);
+    height: $fotos-tienda;
+    @include tienda(top, cover)
+}
+
+.converTor {
+    background-color: $color-secundario;
+    background-image: url(../assets/img/convertorhdmi.jpg);
+    height: $fotos-tienda;
+    @include tienda(center, cover)
+}
+
+.cpuCooler {
+    background-color: $color-secundario;
+    background-image: url(../assets/img/cpucooler.jpg);
+    height: $fotos-tienda;
+    @include tienda(top, cover)
+}
+
+.mouseRaton {
+    background-color: $color-secundario;
+    background-image: url(../assets/img/mouse.png);
+    height: $fotos-tienda;
+    @include tienda(center, cover)
+}
+
+.tarGrafic {
+    background-color: $color-secundario;
+    background-image: url(../assets/img/rx6600.jpg);
+    height: $fotos-tienda;
+    @include tienda(center, cover)
+}
+
+.producInfo {
+    h4 {
+        color: red;
+        text-shadow: 0 0 2px #ffff;
+        text-align: center;
+        text-transform: capitalize;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 10px;
+        background-color: black;
+        border-style: double;
+    }
+
+    p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-transform: initial;
+        font-size: 9px;
+        padding: 5px;
+    }
+
+
+}
+
+.tituloTrabajos {
+    background: linear-gradient(grey, #ffff);
+    border-radius: 0;
+    margin: 0;
+
+}
+
+
+.trabajoimage {
+    background-color: aquamarine;
+    background-image: url(../assets/img/format.png);
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+}
+
+.trabajoinfo {
+    background: $degrade-triple;
+
+    h3 {
+        color: $color-primario;
+        text-align: center;
+        text-shadow: 0 0 3px $color-secundario;
+        padding: 5px;
+    }
+
+    p {
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        text-align: justify;
+        padding: 5px;
+    }
+
+}
+
+.trabajoimage2 {
+    background-color: aquamarine;
+    background-image: url(../assets/img/mantenimientoPC.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+}
+
+.trabajoinfo2 {
+    background: $degrade-triple;
+
+    h3 {
+        color: $color-primario;
+        text-align: center;
+        text-shadow: 0 0 3px $color-secundario;
+        padding: 5px;
+    }
+
+    p {
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        text-align: justify;
+        padding: 5px;
+    }
+
+}
+
+.trabajoimage3 {
+    background-color: aquamarine;
+    background-image: url(../assets/img/armadoPC.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+}
+
+.trabajoinfo3 {
+    background: $degrade-triple;
+
+    h3 {
+        color: $color-primario;
+        text-align: center;
+        text-shadow: 0 0 3px $color-secundario;
+        padding: 5px;
+    }
+
+    p {
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        text-align: justify;
+        padding: 5px;
+    }
+
+}
+
+
+.contaCto {
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    padding: 5px 0px 10px 10px;
+    text-align: center;
+    text-shadow: 0 0 5px red;
+
+}
+
+#postcontac {
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    padding: 10px;
+}
+
+table {
+    padding: 10px 10px 10px 10px;
+    margin: 8px 8px;
+    border: 2px solid red;
+
+}
+
+fieldset {
+    legend {
+        font-size: 18px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: oblique;
+        padding: 5px 10px 10px 10px;
+        font-weight: bold;
+
+    }
+
+    .cuadritoContac {
+        padding: 10px;
+        font-weight: bold;
+
+    }
+
+    input {
+        padding: 2px;
+        margin: 10px;
+        border: solid 2px black;
+    }
+
+    select {
+        @extend input
+    }
+
+}
+
+.form-group {
+    padding: 5px;
+    margin: 5px;
+
+    label {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    textarea {
+        border: solid 1px black;
+    }
+}
+
+@media only screen and (min-width:1279px) {
+    .foto {
+        height: 180px;
+        background-color: $color-secundario;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .producInfo {
+        h4 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 15px;
+            padding: 5px;
+        }
+
+    }
+}
+
+@media only screen and (max-width:1279px) {
+    .escriTorio {
+        h2 {
+            font-size: 26px;
+        }
+
+        li {
+            font-size: 20px;
+            line-height: 1.0;
+        }
+    }
+
+    .netBook {
+        h2 {
+            font-size: 26px;
+        }
+
+        li {
+            font-size: 20px;
+            line-height: 1.0;
+        }
+
+    }
+
+    .noteBook {
+        h2 {
+            font-size: 26px;
+        }
+
+        li {
+            font-size: 20px;
+            line-height: 1.0;
+        }
+    }
+}
+
+@media only screen and (max-width:376px) {
+    .tituloTrabajos {
+        font-size: 25px
+    }
+
+    .escriTorio {
+        h2 {
+            font-size: 18px;
+        }
+
+        li {
+            font-size: 12px;
+            line-height: 1.0;
+        }
+
+    }
+}
+
+.netBook {
+    h2 {
+        font-size: 18px;
+    }
+
+    li {
+        font-size: 12px;
+        line-height: 1.0;
+    }
+}
+
+.noteBook {
+    h2 {
+        font-size: 18px;
+    }
+
+    li {
+        font-size: 12px;
+        line-height: 1.0;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .cuadritoContac {
+        display: block;
+    }
+}
