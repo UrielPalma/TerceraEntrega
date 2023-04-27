@@ -586,20 +586,19 @@ fieldset {
     .flex-column {
         width: 90%;
         height: 400px;
+    }
 
-        .foto {
-            height: 250px;
+    .producInfo {
+        h4 {
+            font-size: 30px;
         }
 
-        .producInfo {
-            h4 {
-                font-size: 30px;
-            }
-
-            p {
-                font-size: 15px;
-            }
+        p {
+            font-size: 15px;
         }
     }
 
+    .foto {
+        height: 250px;
+    }
 }

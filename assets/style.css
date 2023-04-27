@@ -454,13 +454,13 @@ fieldset input, fieldset select {
     width: 90%;
     height: 400px;
   }
-  .flex-column .foto {
-    height: 250px;
-  }
-  .flex-column .producInfo h4 {
+  .producInfo h4 {
     font-size: 30px;
   }
-  .flex-column .producInfo p {
+  .producInfo p {
     font-size: 15px;
+  }
+  .foto {
+    height: 250px;
   }
 }/*# sourceMappingURL=style.css.map */
