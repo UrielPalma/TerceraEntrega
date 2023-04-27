@@ -4,7 +4,7 @@ $color-secundario: #333;
 $degrade-triple: linear-gradient(grey, #ffff, grey);
 
 // letter size
-$fotos-tienda: 150px;
+$fotos-tienda: 250px;
 $ancho-total: 100%;
 
 * {
@@ -84,7 +84,7 @@ h1 {
 }
 
 .carousel-item {
-    
+
     img {
         height: 400px;
         width: $ancho-total;
@@ -176,13 +176,9 @@ h1 {
 
 }
 
-.producTienda {
-    height: 920px;
-    width: $ancho-total;
-    background-color: beige;
-    padding: 5px;
 
-}
+
+
 
 .flex-row {
     display: flex;
@@ -192,80 +188,83 @@ h1 {
 
 }
 
-.flex-column {
-    width: 25%;
-    height: 300px;
-    padding: 5px;
-    border: solid $color-secundario 3px;
-    margin: 2px;
-}
-
 @mixin tienda ($bgposition, $bgsize) {
     background-position: $bgposition;
     background-size: $bgsize;
 }
 
+.producTienda {
+    height: 100%;
+    width: $ancho-total;
+    background-color: beige;
+    padding: 5px;
+}
+
+.flex-column {
+    width: 25%;
+    height: 500px;
+    background-color: #ffff;
+    padding: 5px;
+    border: solid $color-secundario 3px;
+    margin: 8px;
+
+
+    .foto {
+        height: $fotos-tienda;
+    }
+}
 
 .cableCharge {
     background-color: $color-secundario;
     background-image: url(../assets/img/cablescarga.jpg);
-    height: $fotos-tienda;
     @include tienda(center, cover)
 }
 
 .cargaDor {
     background-color: $color-secundario;
     background-image: url(../assets/img/cargadorspeed.jpg);
-    height: $fotos-tienda;
     @include tienda(center, cover)
 }
 
 .extensorWifi {
     background-color: $color-secundario;
     background-image: url(../assets/img/extensorwifi.jpg);
-    height: $fotos-tienda;
     @include tienda(center, cover)
 }
 
 .cargaNet {
     background-color: $color-secundario;
     background-image: url(../assets/img/chargnot.png);
-    height: $fotos-tienda;
     @include tienda(center, cover)
 }
 
 .logPro {
     background-color: $color-secundario;
     background-image: url(../assets/img/mousegpro.jpg);
-    height: $fotos-tienda;
     @include tienda(top, cover)
 }
 
 .converTor {
     background-color: $color-secundario;
     background-image: url(../assets/img/convertorhdmi.jpg);
-    height: $fotos-tienda;
     @include tienda(center, cover)
 }
 
 .cpuCooler {
     background-color: $color-secundario;
     background-image: url(../assets/img/cpucooler.jpg);
-    height: $fotos-tienda;
     @include tienda(top, cover)
 }
 
 .mouseRaton {
     background-color: $color-secundario;
     background-image: url(../assets/img/mouse.png);
-    height: $fotos-tienda;
     @include tienda(center, cover)
 }
 
 .tarGrafic {
     background-color: $color-secundario;
     background-image: url(../assets/img/rx6600.jpg);
-    height: $fotos-tienda;
     @include tienda(center, cover)
 }
 
@@ -276,7 +275,7 @@ h1 {
         text-align: center;
         text-transform: capitalize;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 10px;
+        font-size: 20px;
         background-color: black;
         border-style: double;
     }
@@ -284,12 +283,18 @@ h1 {
     p {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-transform: initial;
-        font-size: 9px;
+        font-size: 15px;
         padding: 5px;
     }
 
 
 }
+
+
+
+
+
+
 
 .tituloTrabajos {
     background: linear-gradient(grey, #ffff);
@@ -308,7 +313,6 @@ h1 {
 }
 
 .trabajoinfo {
-    background: $degrade-triple;
 
     h3 {
         color: $color-primario;
@@ -336,7 +340,6 @@ h1 {
 }
 
 .trabajoinfo2 {
-    background: $degrade-triple;
 
     h3 {
         color: $color-primario;
@@ -364,7 +367,6 @@ h1 {
 }
 
 .trabajoinfo3 {
-    background: $degrade-triple;
 
     h3 {
         color: $color-primario;
@@ -452,24 +454,26 @@ fieldset {
 }
 
 @media only screen and (min-width:1279px) {
+
     .foto {
-        height: 180px;
         background-color: $color-secundario;
         background-position: center;
         background-size: cover;
     }
 
     .producInfo {
+
         h4 {
-            font-size: 20px;
+            font-size: 25px;
         }
 
         p {
-            font-size: 15px;
+            font-size: 20px;
             padding: 5px;
         }
 
     }
+
 }
 
 @media only screen and (max-width:1279px) {
@@ -506,7 +510,31 @@ fieldset {
             line-height: 1.0;
         }
     }
+
+    .flex-column {
+        width: 40%;
+        height: 500px;
+
+        .foto {
+            height: 250px;
+        }
+
+        .producInfo {
+
+            h4 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+
+    }
+
 }
+
 
 @media only screen and (max-width:376px) {
     .tituloTrabajos {
@@ -552,4 +580,26 @@ fieldset {
     .cuadritoContac {
         display: block;
     }
+}
+
+@media only screen and (max-width: 799px) {
+    .flex-column {
+        width: 90%;
+        height: 400px;
+
+        .foto {
+            height: 250px;
+        }
+
+        .producInfo {
+            h4 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
 }

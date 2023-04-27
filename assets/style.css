@@ -20,7 +20,7 @@ span {
 }
 
 footer {
-  height: 150px;
+  height: 250px;
   width: 100%;
   background-color: grey;
 }
@@ -137,13 +137,6 @@ h1 {
   margin: 0;
 }
 
-.producTienda {
-  height: 920px;
-  width: 100%;
-  background-color: beige;
-  padding: 5px;
-}
-
 .flex-row {
   display: flex;
   justify-content: space-between;
@@ -151,18 +144,28 @@ h1 {
   height: 100%;
 }
 
+.producTienda {
+  height: 100%;
+  width: 100%;
+  background-color: beige;
+  padding: 5px;
+}
+
 .flex-column {
   width: 25%;
-  height: 300px;
+  height: 500px;
+  background-color: white;
   padding: 5px;
   border: solid #333 3px;
-  margin: 2px;
+  margin: 8px;
+}
+.flex-column .foto {
+  height: 250px;
 }
 
 .cableCharge {
   background-color: #333;
   background-image: url(../assets/img/cablescarga.jpg);
-  height: 150px;
   background-position: center;
   background-size: cover;
 }
@@ -170,7 +173,6 @@ h1 {
 .cargaDor {
   background-color: #333;
   background-image: url(../assets/img/cargadorspeed.jpg);
-  height: 150px;
   background-position: center;
   background-size: cover;
 }
@@ -178,7 +180,6 @@ h1 {
 .extensorWifi {
   background-color: #333;
   background-image: url(../assets/img/extensorwifi.jpg);
-  height: 150px;
   background-position: center;
   background-size: cover;
 }
@@ -186,7 +187,6 @@ h1 {
 .cargaNet {
   background-color: #333;
   background-image: url(../assets/img/chargnot.png);
-  height: 150px;
   background-position: center;
   background-size: cover;
 }
@@ -194,7 +194,6 @@ h1 {
 .logPro {
   background-color: #333;
   background-image: url(../assets/img/mousegpro.jpg);
-  height: 150px;
   background-position: top;
   background-size: cover;
 }
@@ -202,7 +201,6 @@ h1 {
 .converTor {
   background-color: #333;
   background-image: url(../assets/img/convertorhdmi.jpg);
-  height: 150px;
   background-position: center;
   background-size: cover;
 }
@@ -210,7 +208,6 @@ h1 {
 .cpuCooler {
   background-color: #333;
   background-image: url(../assets/img/cpucooler.jpg);
-  height: 150px;
   background-position: top;
   background-size: cover;
 }
@@ -218,7 +215,6 @@ h1 {
 .mouseRaton {
   background-color: #333;
   background-image: url(../assets/img/mouse.png);
-  height: 150px;
   background-position: center;
   background-size: cover;
 }
@@ -226,7 +222,6 @@ h1 {
 .tarGrafic {
   background-color: #333;
   background-image: url(../assets/img/rx6600.jpg);
-  height: 150px;
   background-position: center;
   background-size: cover;
 }
@@ -237,14 +232,14 @@ h1 {
   text-align: center;
   text-transform: capitalize;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 10px;
+  font-size: 20px;
   background-color: black;
   border-style: double;
 }
 .producInfo p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: initial;
-  font-size: 9px;
+  font-size: 15px;
   padding: 5px;
 }
 
@@ -262,9 +257,6 @@ h1 {
   height: 350px;
 }
 
-.trabajoinfo {
-  background: linear-gradient(grey, white, grey);
-}
 .trabajoinfo h3 {
   color: red;
   text-align: center;
@@ -287,9 +279,6 @@ h1 {
   height: 350px;
 }
 
-.trabajoinfo2 {
-  background: linear-gradient(grey, white, grey);
-}
 .trabajoinfo2 h3 {
   color: red;
   text-align: center;
@@ -312,9 +301,6 @@ h1 {
   height: 350px;
 }
 
-.trabajoinfo3 {
-  background: linear-gradient(grey, white, grey);
-}
 .trabajoinfo3 h3 {
   color: red;
   text-align: center;
@@ -382,16 +368,15 @@ fieldset input, fieldset select {
 
 @media only screen and (min-width: 1279px) {
   .foto {
-    height: 180px;
     background-color: #333;
     background-position: center;
     background-size: cover;
   }
   .producInfo h4 {
-    font-size: 20px;
+    font-size: 25px;
   }
   .producInfo p {
-    font-size: 15px;
+    font-size: 20px;
     padding: 5px;
   }
 }
@@ -416,6 +401,19 @@ fieldset input, fieldset select {
   .noteBook li {
     font-size: 20px;
     line-height: 1;
+  }
+  .flex-column {
+    width: 40%;
+    height: 500px;
+  }
+  .flex-column .foto {
+    height: 250px;
+  }
+  .flex-column .producInfo h4 {
+    font-size: 30px;
+  }
+  .flex-column .producInfo p {
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 376px) {
@@ -451,5 +449,18 @@ fieldset input, fieldset select {
     display: block;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
+@media only screen and (max-width: 799px) {
+  .flex-column {
+    width: 90%;
+    height: 400px;
+  }
+  .flex-column .foto {
+    height: 250px;
+  }
+  .flex-column .producInfo h4 {
+    font-size: 30px;
+  }
+  .flex-column .producInfo p {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
