@@ -260,7 +260,7 @@ h1 {
 .trabajoinfo h3 {
   color: red;
   text-align: center;
-  text-shadow: 0 0 3px #333;
+  text-shadow: 0 0 5px #333;
   padding: 5px;
 }
 .trabajoinfo p {
@@ -282,7 +282,7 @@ h1 {
 .trabajoinfo2 h3 {
   color: red;
   text-align: center;
-  text-shadow: 0 0 3px #333;
+  text-shadow: 0 0 5px #333;
   padding: 5px;
 }
 .trabajoinfo2 p {
@@ -304,7 +304,7 @@ h1 {
 .trabajoinfo3 h3 {
   color: red;
   text-align: center;
-  text-shadow: 0 0 3px #333;
+  text-shadow: 0 0 5px #333;
   padding: 5px;
 }
 .trabajoinfo3 p {
@@ -454,13 +454,13 @@ fieldset input, fieldset select {
     width: 90%;
     height: 400px;
   }
-  .producInfo h4 {
+  .flex-column .producInfo h4 {
     font-size: 30px;
   }
-  .producInfo p {
+  .flex-column .producInfo p {
     font-size: 15px;
   }
-  .foto {
+  .flex-column .foto {
     height: 250px;
   }
 }/*# sourceMappingURL=style.css.map */

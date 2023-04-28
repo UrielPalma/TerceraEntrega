@@ -317,7 +317,7 @@ h1 {
     h3 {
         color: $color-primario;
         text-align: center;
-        text-shadow: 0 0 3px $color-secundario;
+        text-shadow: 0 0 5px $color-secundario;
         padding: 5px;
     }
 
@@ -344,7 +344,7 @@ h1 {
     h3 {
         color: $color-primario;
         text-align: center;
-        text-shadow: 0 0 3px $color-secundario;
+        text-shadow: 0 0 5px $color-secundario;
         padding: 5px;
     }
 
@@ -371,7 +371,7 @@ h1 {
     h3 {
         color: $color-primario;
         text-align: center;
-        text-shadow: 0 0 3px $color-secundario;
+        text-shadow: 0 0 5px $color-secundario;
         padding: 5px;
     }
 
@@ -475,6 +475,8 @@ fieldset {
     }
 
 }
+
+
 
 @media only screen and (max-width:1279px) {
     .escriTorio {
@@ -586,19 +588,20 @@ fieldset {
     .flex-column {
         width: 90%;
         height: 400px;
-    }
 
-    .producInfo {
-        h4 {
-            font-size: 30px;
+
+        .producInfo {
+            h4 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 15px;
+            }
         }
 
-        p {
-            font-size: 15px;
+        .foto {
+            height: 250px;
         }
-    }
-
-    .foto {
-        height: 250px;
     }
 }
