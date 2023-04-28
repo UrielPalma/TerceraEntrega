@@ -74,7 +74,7 @@ h1 {
   background-size: cover;
 }
 
-.escriTorio h2 {
+main .escriTorio h2 {
   margin: 10px 10px 20px 10px;
   padding: 10px 10px 20px 10px;
   font-size: 35px;
@@ -83,15 +83,14 @@ h1 {
   border-radius: 15px;
   border: 5px solid black;
 }
-.escriTorio li {
+main .escriTorio li {
   font-size: 25px;
   font-style: oblique;
   font-family: Georgia, "Times New Roman", Times, serif;
   padding-left: 20px;
   line-height: 1.5;
 }
-
-.netBook h2 {
+main .netBook h2 {
   margin: 10px 10px 20px 10px;
   padding: 10px 10px 20px 10px;
   font-size: 35px;
@@ -100,15 +99,14 @@ h1 {
   border-radius: 15px;
   border: 5px solid black;
 }
-.netBook li {
-  padding-left: 20px;
+main .netBook li {
   font-size: 25px;
-  line-height: 1.5;
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-style: oblique;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-left: 20px;
+  line-height: 1.5;
 }
-
-.noteBook h2 {
+main .noteBook h2 {
   margin: 10px 10px 20px 10px;
   padding: 10px 10px 20px 10px;
   font-size: 35px;
@@ -117,7 +115,7 @@ h1 {
   border-radius: 15px;
   border: 5px solid black;
 }
-.noteBook li {
+main .noteBook li {
   font-size: 25px;
   font-style: oblique;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -381,24 +379,24 @@ fieldset input, fieldset select {
   }
 }
 @media only screen and (max-width: 1279px) {
-  .escriTorio h2 {
+  .escriTorio article h2 {
     font-size: 26px;
   }
-  .escriTorio li {
+  .escriTorio article li {
     font-size: 20px;
     line-height: 1;
   }
-  .netBook h2 {
+  .netBook article h2 {
     font-size: 26px;
   }
-  .netBook li {
+  .netBook article li {
     font-size: 20px;
     line-height: 1;
   }
-  .noteBook h2 {
+  .noteBook article h2 {
     font-size: 26px;
   }
-  .noteBook li {
+  .noteBook article li {
     font-size: 20px;
     line-height: 1;
   }

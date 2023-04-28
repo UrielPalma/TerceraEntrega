@@ -94,73 +94,75 @@ h1 {
 
 }
 
-.escriTorio {
+main {
+    .escriTorio {
 
 
-    h2 {
-        margin: 10px 10px 20px 10px;
-        padding: 10px 10px 20px 10px;
-        font-size: 35px;
-        display: inline-block;
-        background: $degrade-triple;
-        border-radius: 15px;
-        border: 5px solid black;
+        h2 {
+            margin: 10px 10px 20px 10px;
+            padding: 10px 10px 20px 10px;
+            font-size: 35px;
+            display: inline-block;
+            background: $degrade-triple;
+            border-radius: 15px;
+            border: 5px solid black;
+
+        }
+
+        li {
+            font-size: 25px;
+            font-style: oblique;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-left: 20px;
+            line-height: 1.5;
+        }
 
     }
 
-    li {
-        font-size: 25px;
-        font-style: oblique;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        padding-left: 20px;
-        line-height: 1.5;
+
+    .netBook {
+
+        h2 {
+            margin: 10px 10px 20px 10px;
+            padding: 10px 10px 20px 10px;
+            font-size: 35px;
+            display: inline-block;
+            background: $degrade-triple;
+            border-radius: 15px;
+            border: 5px solid black;
+        }
+
+        li {
+            font-size: 25px;
+            font-style: oblique;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-left: 20px;
+            line-height: 1.5;
+        }
+
     }
 
-}
+    .noteBook {
 
+        h2 {
+            margin: 10px 10px 20px 10px;
+            padding: 10px 10px 20px 10px;
+            font-size: 35px;
+            display: inline-block;
+            background: $degrade-triple;
+            border-radius: 15px;
+            border: 5px solid black;
+        }
 
-.netBook {
+        li {
+            font-size: 25px;
+            font-style: oblique;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-left: 20px;
+            line-height: 1.5;
+        }
 
-    h2 {
-        margin: 10px 10px 20px 10px;
-        padding: 10px 10px 20px 10px;
-        font-size: 35px;
-        display: inline-block;
-        background: $degrade-triple;
-        border-radius: 15px;
-        border: 5px solid black;
     }
-
-    li {
-        padding-left: 20px;
-        font-size: 25px;
-        line-height: 1.5;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-style: oblique;
-    }
-
-}
-
-.noteBook {
-
-    h2 {
-        margin: 10px 10px 20px 10px;
-        padding: 10px 10px 20px 10px;
-        font-size: 35px;
-        display: inline-block;
-        background: $degrade-triple;
-        border-radius: 15px;
-        border: 5px solid black;
-    }
-
-    li {
-        font-size: 25px;
-        font-style: oblique;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        padding-left: 20px;
-        line-height: 1.5;
-    }
-
 }
 
 .tituloProduc {
@@ -175,9 +177,6 @@ h1 {
     margin: 0;
 
 }
-
-
-
 
 
 .flex-row {
@@ -289,11 +288,6 @@ h1 {
 
 
 }
-
-
-
-
-
 
 
 .tituloTrabajos {
@@ -479,37 +473,48 @@ fieldset {
 
 
 @media only screen and (max-width:1279px) {
-    .escriTorio {
-        h2 {
-            font-size: 26px;
-        }
 
-        li {
-            font-size: 20px;
-            line-height: 1.0;
+    .escriTorio {
+
+        article {
+            h2 {
+                font-size: 26px;
+            }
+
+            li {
+                font-size: 20px;
+                line-height: 1.0;
+            }
         }
     }
 
     .netBook {
-        h2 {
-            font-size: 26px;
-        }
+        article {
 
-        li {
-            font-size: 20px;
-            line-height: 1.0;
-        }
 
+            h2 {
+                font-size: 26px;
+            }
+
+            li {
+                font-size: 20px;
+                line-height: 1.0;
+            }
+
+        }
     }
 
     .noteBook {
-        h2 {
-            font-size: 26px;
-        }
+        article {
+            h2 {
+                font-size: 26px;
+            }
 
-        li {
-            font-size: 20px;
-            line-height: 1.0;
+            li {
+                font-size: 20px;
+                line-height: 1.0;
+            }
+
         }
     }
 
@@ -536,7 +541,6 @@ fieldset {
     }
 
 }
-
 
 @media only screen and (max-width:376px) {
     .tituloTrabajos {
